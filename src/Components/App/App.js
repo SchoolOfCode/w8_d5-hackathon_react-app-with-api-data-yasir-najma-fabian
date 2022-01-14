@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <div className="headingAndLogo">
-        <h1>Najma's Happy Recipe Land</h1>
+        <h1>Happy Recipe Land</h1>
         <img src={logo} alt="logo here" />
       </div>
       {/* <Banner /> */}
