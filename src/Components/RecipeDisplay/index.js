@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./RecipeDisplay.css";
 
 function RecipeDisplay({ userInput }) {
   const [result, setResult] = useState([]);
@@ -8,15 +9,15 @@ function RecipeDisplay({ userInput }) {
       const response = await fetch(APP_URL);
       const data = await response.json();
       setResult(data.hits);
-      console.log(data.hits)
+      console.log(data.hits);
     };
     getData();
   }, [userInput]);
   return (
-    <div>
+    <div className="allResults">
       {result.map((item) => {
         return (
-          <div key={`${item.recipe.url}`}>
+          <div key={`${item.recipe.url}`} className="foodResult">
             <h3>{item.recipe.label}</h3>
             <a href={`${item.recipe.url}`}>
               <img src={`${item.recipe.image}`} alt={`${item.recipe.label}`} />
