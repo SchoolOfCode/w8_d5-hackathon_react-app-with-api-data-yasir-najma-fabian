@@ -1,16 +1,13 @@
-import React from 'react';
-import Input from '../Input';
-import BannerLogo from '../../BannerImg.jpeg'
-import "./Banner.css"
+import React from "react";
+import BannerLogo from "../../bannerl.jpg";
+import "./Banner.css";
 
 function Banner() {
-    return (
-        <header>
-            <img src={`${BannerLogo}`}/>
-        </header>
-    )
+  return (
+    <header>
+      <img src={`${BannerLogo}`} alt="banner" />
+    </header>
+  );
 }
 
-
-
-export default Banner
+export default Banner;

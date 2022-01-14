@@ -1,12 +1,17 @@
 import React from "react";
-
-function Input({onChange}) {
+import "./Input.css";
+function Input({ onChange }) {
   return (
-  <>
-    <input type="text" onChange={(e)=>{onChange(e.target.value)}}></input>
-  </>
-  )
+    <div className="input">
+      <input
+        style={{ width: 200, height: 30, fontSize: 20 }}
+        type="text"
+        onChange={(e) => {
+          onChange(e.target.value);
+        }}
+      ></input>
+    </div>
+  );
 }
 
-
-export default Input
+export default Input;

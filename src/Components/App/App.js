@@ -3,7 +3,7 @@ import Input from "../Input";
 import { useState } from "react";
 import RecipeDisplay from "../RecipeDisplay";
 import logo from "../../cooklogo.png";
-import Banner from "../Banner";
+// import Banner from "../Banner";
 
 function App() {
   const [userInput, setuserInput] = useState("");
@@ -17,7 +17,7 @@ function App() {
         <h1>Najma's Happy Recipe Land</h1>
         <img src={logo} alt="logo here" />
       </div>
-      <Banner />
+      {/* <Banner /> */}
       <Input onChange={handleuserInput} />
       <RecipeDisplay userInput={userInput} />
     </div>
