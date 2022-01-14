@@ -1,0 +1,19 @@
+Task 1:
+    API = Edamam
+Task 2:
+    Search box for user to search for recipes
+    each recipe:
+        image
+        short description
+        name of recipe
+        button to link to recipe
+Task 3:
+    Components
+        App
+        Input
+            button
+        ResultsDisplay
+        Title
+        Logo
+
+

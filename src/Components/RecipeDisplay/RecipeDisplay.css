@@ -1,0 +1,22 @@
+.allResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: rgb(221, 221, 221);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+img {
+  height: 200px;
+  width: 250px;
+}
